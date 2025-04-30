@@ -27,10 +27,10 @@ jobs:
       with:
         java-version: '17'
         distribution: 'temurin'
-        cache: maven
+        maven-version: 3.9.0
 
-    - name: Install Maven
-      run: sudo apt-get install maven -y
+  #  - name: Install Maven
+  #    run: sudo apt-get install maven -y
 
     - name: Run Jmeter tests  
       run: mvn clean verify
