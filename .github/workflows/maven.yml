@@ -40,4 +40,4 @@ jobs:
       if: success() || failure()
       with:
           name: Jmeter Report                                           # Name of the folder
-          path: target/jmeter/reports/SOAP_Request/index.html           # Path to test results
+          path: target/jmeter/reports/SOAP_Request                      # Path to test results
