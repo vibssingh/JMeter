@@ -29,7 +29,10 @@ jobs:
         distribution: 'temurin'
         cache: maven
 
-    - name: Build with Maven
+    - name: Install Maven
+      run: sudo apt-get install maven -y
+
+    - name: Run Jmeter tests  
       run: mvn clean verify
         
     - name: Test Report Generation
